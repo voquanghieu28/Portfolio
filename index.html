@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+  min-height: 470px;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+</style>
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1600px;"> <!--style="max-width:1400px;"-->
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-quarter">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="my_image.jpg" style="width:100%" alt="Avatar">
+        </div>
+        <div class="w3-container">
+          <div class="w3-text-black">
+            <h2>Quang Hieu Vo</h2>
+          </div>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Software Developer</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Ottawa, ON</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>voquanghieu28@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>(+1) 343-548-2805</p>
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <p>Back end development</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+          </div>
+          <p>Microservices</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+              <div class="w3-center w3-text-white">80%</div>
+            </div>
+          </div>
+          <p>Front end development</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+          </div>
+          <p>Data Analitics and Artificial Inteligence</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+          </div>
+          <br>
+          <!--
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:90%"></div>
+          </div>
+          <p>Vietnamese</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+          </div>
+          -->
+
+          <hr>
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Technologies</b></p>
+          <p></p>PROGRAMMING LANGUAGES</p>
+          <div class="w3-text-black">
+            Java, JavaScript (Node.JS), C/C#/C++, Python, R, SQL, PHP, HTML/CSS
+          </div>
+          
+          <p>FRAMEWORKS</p>
+          <div class="w3-text-black">
+            React, React Native, Hibernate, Spring, Express, Bootstraps
+          </div>
+
+          <p>RDBMS </p>
+          <div class="w3-text-black">
+            MongoDB, Redis, Cassandra, Oracle, PostgreSQL, MS SQL Server, MySQL, MySQL
+          </div>
+
+          <p>CONCEPTS </p>
+          <div class="w3-text-black">
+            Object Oriented Programming, Functional Programming, Design patterns, Mobile Application programming, RESTful API
+          </div>
+
+          <p>VERSION CONTROL</p>
+          <div class="w3-text-black">
+            Git (Github, Gogs) 
+          </div>
+
+          <p>SOFTWARES</p>
+          <div class="w3-text-black">
+            Confluence, Axosoft, Slack, Teams, VS Code, Eclipse, NetBeans, Android Studio
+            FFmpeg
+          </div>
+
+          <p>SYSTEMS </p>
+          <div class="w3-text-black">
+            Linux (Bash shell), Ubuntu, Mac, Windows
+          </div>
+
+          
+         
+          
+          
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-threequarter">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Professional Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Software Developer / TelASK Technologies Inc.</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2020 - <span class="w3-tag w3-teal w3-round">August 2021</span></h6>
+          <p>
+            Perform as a team member in an Algile team, specialize in
+            Quality Insurance and Testing.           
+            Testing healthcare software system and applications. Finding
+            bugs and error in these system and giving opinion to make
+            changes and update
+          </p> 
+          <p>
+            Creating, preparing documents, test plans and diagrams for software
+            projects 
+          </p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Software Developer / Searidge Technologies Inc.</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2020 - May 2020</h6>
+          <p>
+            Design, developing and testing web apps, mobile apps, micro-services. Working with modern technologies such as React, React Native, Docker, etc.
+            Research about cyber security solutions and software architecture for aviation industry
+          </p>
+          <p>
+            Working effectively with an Agile-like team to develop company product
+          </p>
+          <br>
+        </div>
+
+      </div>
+
+
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <div class="w3-row">
+          <div class="w3-container w3-half">
+            <h5 class="w3-opacity"><b>Trent University - Bachelor's degree</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2021 - Now</h6>
+          <p>Computer Science major (Minor in Data Analytics)</p>
+          <p>Awarded Entrance Scholarship Upon Academic Outstanding</p>
+          </div>
+          <div class="w3-container w3-half">
+            <h5 class="w3-opacity"><b>Algonquin College - Diploma</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - 2020</h6>
+            <p>Computer Programming program (Graduated with Honours)</p>
+            <p>Placed in Dean's Honours List</p>
+            <br>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-id-badge fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>My wonderful projects</h2>
+        
+        <div class="w3-container">
+          <div class="w3-row-padding">
+            <div class="w3-quarter" >
+              <img src="project.png" style="width:100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" alt="Avatar">
+            </div>
+            <div class="w3-threequarter">
+              <h5 class="w3-opacity"><b>Vaccination booking system (Node.js, React.js, MongoDB)</b></h5>
+              <p>
+                This application provides capabilities for user to book and manage vaccination booking. 
+                It also provides functionalities for staff to manage appoinments. Material Desgin is used to enhance user experience
+              </p>
+              <p>
+                The system using Node.js for backend and using
+                MongoDB to store data. The front-end, microservice applications (React.js app)
+                will have capabilities to communicate through the Node.js API
+              </p>
+              <p>
+                Link to website: <a href="https://vaccination-booking.herokuapp.com"> https://vaccination-booking.herokuapp.com</a>
+              </p>
+            </div>
+          </div>  
+          <hr>
+        </div>
+
+
+        <div class="w3-container">
+          <div class="w3-row-padding">
+            <div class="w3-quarter" >
+              <img src="project1.png" style="width:100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" alt="Avatar">
+            </div>
+            <div class="w3-threequarter">
+              <h5 class="w3-opacity"><b>Survey Rabit (Node.js, React.js, MongoDB)</b></h5>
+              <p>
+                Survey rabit is a survey management system, it provides capabilities for user to take survey and
+                view statistic result, it also a platform for admin to create, manage and publish the survey
+              </p>
+              <p>
+                The system using Node.js for backend and using
+                MongoDB to store data. The front-end, microservice applications (React.js app)
+                will have capabilities to communicate through the Node.js API
+              </p>
+              <p>
+                Link to website: <a href="https://hieu-survey.herokuapp.com/create"> https://hieu-survey.herokuapp.com/create </a>
+              </p>
+            </div>
+          </div>  
+          <hr>
+        </div>
+
+        <div class="w3-container">
+          <div class="w3-row-padding">
+            <div class="w3-quarter" >
+              <img src="project2.png" style="width:100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" alt="Avatar">
+            </div>
+            <div class="w3-threequarter">
+              <h5 class="w3-opacity"><b>COVID-19 statistic App for IOS/Android (React Native)</b></h5>
+              <p>
+                An mobile application with friendly user interface to help user updating data related to COVID-19
+              </p>
+              <p>
+                User can navigate through 3 items to view: the number of cases around the world, the number of cases by each country, the local news related to COVID-19
+                It also Provide capabilities for user to view nearest COVID-19 testing centre and direction (by Google Map API)
+              </p>  
+              <p>
+                Demo: <a href="https://www.youtube.com/watch?v=AILvKGLoBj8"> https://www.youtube.com/watch?v=AILvKGLoBj8 </a>
+              </p> 
+            </div>
+          </div>  
+          <hr>
+        </div>
+
+        <div class="w3-container">
+          <div class="w3-row-padding">
+            <div class="w3-quarter" >
+              <img src="project3.png" style="width:100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" alt="Avatar">
+            </div>
+            <div class="w3-threequarter">
+              <h5 class="w3-opacity"><b>COVID-19 Dashboard (React, Chart.js)</b></h5>
+              <p>
+                An application to display the statistic report of COVID-19 by using large dashboard with different diagrams (using Chart.js)
+              </p>
+              <p>
+                There are different visualizing options so that the user could easily compare, predict the COVID-19 situation. User can either choose to display total or by country, 
+                there also have features to group, filtering in order to get best visualizing
+              </p>
+              <p>
+                Demo: <a href="https://www.youtube.com/watch?v=YMujnY6grhs">  https://www.youtube.com/watch?v=YMujnY6grhs</a>
+              </p> 
+            </div>
+          </div>  
+          <hr>
+        </div>
+
+        <div class="w3-container">
+          <div class="w3-row-padding">
+            <div class="w3-quarter" >
+              <img src="project4.png" style="width:100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" alt="Avatar">
+            </div>
+            <div class="w3-threequarter">
+              <h5 class="w3-opacity"><b>Customer Management System (PHP, MySQL, JQuery, Bootstrap)</b></h5>
+              <p>
+                Having capabilities to mangae and perform CRUD operation to customer data.
+                Provide accesible UX/UI by using modern and responsive design (Bootstrap)
+              </p>
+              <p>
+                Link to website: <a href="https://hieu-college.herokuapp.com/create.php">https://hieu-college.herokuapp.com/create.php</a>
+              </p> 
+            </div>
+          </div>  
+          <hr>
+        </div>
+
+
+        <div class="w3-container">
+          <div class="w3-row-padding">
+            <div class="w3-quarter" >
+              <img src="project5.png" style="width:100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" alt="Avatar">
+            </div>
+            <div class="w3-threequarter">
+              <h5 class="w3-opacity"><b>Book Store Management System (Node JS, including REST API)</b></h5>
+              <p>
+                Having features for customer to view and order product. User can view and search book by categories, author, publisher, hobby.
+                Each book also include a description and a review video about the book.
+              </p>
+              <p>
+                Also provide capabilities for administrators to sending email, export invoice, etc.
+              </p>
+              <p>
+                Link to source code (with images): <a href="https://github.com/voquanghieu28/Hugh-Bookstore-API">https://github.com/voquanghieu28/Hugh-Bookstore-API</a>
+              </p>          
+            </div>
+          </div>  
+          <hr>
+        </div>
+
+
+        <div class="w3-container">
+          <div class="w3-row-padding">
+            <div class="w3-quarter" >
+              <img src="project6.png" style="width:100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" alt="Avatar">
+            </div>
+            <div class="w3-threequarter">
+              <h5 class="w3-opacity"><b>Fast and Furios Car racing game (Java Swing)</b></h5>
+              <p>
+                It’s a 2D game, the user will drive the car and his/her job is to pass as much car as he/she can without having any coliision
+              </p>
+              <p>
+                This is an arcade game so the more car the player pass, the higher
+                score the player get. There also three level for user to play: easy,
+                medium, hard; each level have a different speed
+              </p>
+              <p>
+                Demo: <a href="https://www.youtube.com/watch?v=rEmQxXms-JA">https://www.youtube.com/watch?v=rEmQxXms-JA</a>
+              </p> 
+              <br>
+            </div>
+          </div>  
+          <br>
+        </div>
+      </div>
+
+      
+
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-rocket fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Professional Development</h2>
+        <div class="w3-row">
+          <div class="w3-container w3-half">
+              <div class="w3-container">
+                <h6 class="w3-opacity"><b>Java EE: JavaServer Faces JSF</b></h6>
+                <h7 class="w3-text-teal">Linkedin certificate</h7>
+                <hr>
+              </div> 
+              <div class="w3-container">
+                <h6 class="w3-opacity"><b>Java EE: Servlets and JavaServer Pages (JSP)</b></h6>
+                <h7 class="w3-text-teal">Linkedin certificate</h7>
+                <hr>
+              </div> 
+              <div class="w3-container">
+                <h6 class="w3-opacity"><b>Java Persistence API (JPA): 1 The Basics</b></h6>
+                <h7 class="w3-text-teal">Linkedin certificate</h7>
+                <hr>
+              </div> 
+              <div class="w3-container">
+                <h6 class="w3-opacity"><b>Java Persistence API (JPA): 2 Inheritance and Querying</b></h6>
+                <h7 class="w3-text-teal">Linkedin certificate</h7>
+              </div> 
+          </div>
+          <div class="w3-container w3-half">
+              <div class="w3-container">
+                <h6 class="w3-opacity"><b>NodeJS - The Complete Guide</b></h6>
+                <h7 class="w3-text-teal"></i>Udemy certificate</h7>
+                <hr>
+              </div>
+              <div class="w3-container">
+                <h6 class="w3-opacity"><b>JavaScript Algorithms and Data Structures Masterclass</b></h6>
+                <h7 class="w3-text-teal">Udemy certificate</h7>
+                <hr>
+              </div>       
+              <div class="w3-container">
+                <h6 class="w3-opacity"><b>Agile Testing</b></h6>
+                <h7 class="w3-text-teal">Linkedin certificate</h7>
+                <hr>
+              </div> 
+          </div>
+          <br>
+        </div>
+        <br>        
+      </div>
+      
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-rocket fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>What people thinks about me</h2>   
+        <div class="slideshow-container">
+
+          
+
+          <div class="mySlides">
+            <q>
+              I had the pleasure of mentoring and supervising Quang Hieu Vo during his 8 month term as a
+              Jr. Software Developer at Searidge Technologies and would wholeheartedly recommend him for
+              similar opportunities in the future. Hieu reported directly to me on a broad range of programming
+              tasks and provided researched recommendations on technical decisions for our product
+              development. Hieu continuously impressed everyone on the team with his work ethic and
+              eagerness to learn and contribute.<br><br>
+              From day one, Hieu expressed a desire to go above and beyond and he delivered on that
+              commitment by consistently solving complex problems ahead of schedule. Hieu managed to
+              quickly familiarize himself with large legacy codebases and complex standards then leverage
+              them to produce meaningful contributions to software and projects. He operated highly
+              independently throughout these tasks with a positive and inquisitive attitude.<br><br>
+              I am pleased to provide this personal recommendation. I was impressed throughout our time
+              working together and would recommend Quang Hieu Vo as a software developer in the future.
+            </q>
+            <p class="author">- Supervisor at Searidge Technologies Inc.</p>
+          </div>
+
+
+
+          <div class="mySlides">
+            <q>
+              Quang was one of my students enrolled in the Object-Oriented Programming course here at
+              Algonquin College during the Winter 2019 term.<br><br>
+              I thoroughly enjoyed my time working with Quang and came to know him as a truly studious
+              individual. He is honest, dependable, and incredibly hard-working. Beyond that, he is an
+              impressive programmer who is always eager to demonstrate his skills through his assignments
+              when he delivers above and beyond what is being requested of him.<br><br>
+              His knowledge of Java and expertise in programming as a whole was a huge advantage to the
+              course. He put this skillset to work in order to achieve well above average grades in his
+              assignments and overall course markings.<br><br>
+              Along with his undeniable talent, Quang has always been an absolute joy to work with. He is a
+              true team player, and always manages to foster positive discussions and bring the best out of
+              other students he works with.<br><br>
+              Without a doubt, I confidently recommend Quang. As a dedicated and knowledgeable student
+              and an all-around great person, I know that he will greatly benefit and contribute to whatever
+              he does and will go on to achieve greatness within the industry.
+            </q>
+            <p class="author">- Professor at Algonquin College</p>
+          </div>
+
+          <div class="mySlides">
+            <q>
+              It is my pleasure to recommend one of my best students, Quang for employment with your
+              organization. As the instructor of Network Programming class, I have been consistently impressed
+              with Mr. Hieu Vo attitude and diligence during the time that he has studied in the school of level 2.<br><br>
+              During the period of Mr. Hieu Vo stay at our department he showed a serious attitude towards his
+              work, participated and communicated effectively with team members in most departmental
+              activities especially the networking by ensuring that a project is carried out well. He used websites
+              and books very well to find relevant solutions for any problem and discuss solutions to the problems
+              in groups.<br><br>
+              Mr. Hieu Vo is both very bright and quite motivated. I am confident that he will devote himself to
+              a position with your organization with a high degree of diligence. He is a quick learner and has
+              shown the ability to digest large volumes of information, and he has great enthusiasm for learning
+              new technologies such as virtual machines, and Linux.<br><br>
+              Mr. Hieu Vo is a hard-working young man with a pleasant personality and intelligent background,
+              and I recommend him without reservation for consideration in any establishment that he might be
+              applying to join. I am confident that he will establish productive relationships with your staff. I
+              would be very happy to supply any further information or opinions regarding Mr. Hieu Vo if ever
+              required.
+            </q>
+            <p class="author">- Professor at University of Ottawa</p>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div> 
+        <br>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+</body>
+</html>
